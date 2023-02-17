@@ -26,7 +26,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TFS-A7-DKw">
-                                <rect key="frame" x="50" y="215" width="457" height="60"/>
+                                <rect key="frame" x="50" y="215" width="480.5" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -46,7 +46,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzb-8O-hsB">
-                                <rect key="frame" x="50" y="282" width="457" height="60"/>
+                                <rect key="frame" x="50" y="282" width="480.5" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -54,7 +54,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0R-nv-wID">
-                                <rect key="frame" x="607" y="215" width="163" height="90"/>
+                                <rect key="frame" x="630.5" y="215" width="139.5" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="1qb-UN-d10"/>
                                 </constraints>
@@ -63,7 +63,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Click Me">
                                             <attributes>
-                                                <font key="NSFont" size="36" name="Helvetica"/>
+                                                <font key="NSFont" size="30" name="Helvetica"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
