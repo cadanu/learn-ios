@@ -13,16 +13,17 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet var webView: WKWebView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
+    // webView functions that control the activityIndicator
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()
     }
-    
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activityIndicator.isHidden = true
         activityIndicator.stopAnimating()
     }
 
+    // a main function
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,18 +31,11 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         let request = URLRequest(url: link)
         webView.load(request)
         webView.navigationDelegate = self
-
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }

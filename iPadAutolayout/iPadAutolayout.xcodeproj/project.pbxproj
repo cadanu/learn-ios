@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F646F143299F5B0F00B665A3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646F142299F5B0F00B665A3 /* Data.swift */; };
 		F684A4C3299E759F0050DFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684A4C2299E759F0050DFB1 /* AppDelegate.swift */; };
 		F684A4C5299E759F0050DFB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684A4C4299E759F0050DFB1 /* SceneDelegate.swift */; };
 		F684A4C7299E759F0050DFB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684A4C6299E759F0050DFB1 /* ViewController.swift */; };
@@ -15,9 +16,11 @@
 		F684A4CF299E75A10050DFB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F684A4CD299E75A10050DFB1 /* LaunchScreen.storyboard */; };
 		F684A4DA299E808D0050DFB1 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = F684A4D9299E808D0050DFB1 /* start.png */; };
 		F684A4DC299F14750050DFB1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684A4DB299F14750050DFB1 /* WebViewController.swift */; };
+		F6F3B2D629A198AD0002ACAB /* BWEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3B2D529A198AD0002ACAB /* BWEViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F646F142299F5B0F00B665A3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F684A4BF299E759F0050DFB1 /* iPadAutolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPadAutolayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F684A4C2299E759F0050DFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F684A4C4299E759F0050DFB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		F684A4D0299E75A10050DFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F684A4D9299E808D0050DFB1 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start.png; path = rsc/start.png; sourceTree = "<group>"; };
 		F684A4DB299F14750050DFB1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F6F3B2D529A198AD0002ACAB /* BWEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWEViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		F684A4C1299E759F0050DFB1 /* iPadAutolayout */ = {
 			isa = PBXGroup;
 			children = (
+				F6F3B2D529A198AD0002ACAB /* BWEViewController.swift */,
 				F684A4D9299E808D0050DFB1 /* start.png */,
 				F684A4C2299E759F0050DFB1 /* AppDelegate.swift */,
 				F684A4C4299E759F0050DFB1 /* SceneDelegate.swift */,
@@ -69,6 +74,7 @@
 				F684A4CD299E75A10050DFB1 /* LaunchScreen.storyboard */,
 				F684A4D0299E75A10050DFB1 /* Info.plist */,
 				F684A4DB299F14750050DFB1 /* WebViewController.swift */,
+				F646F142299F5B0F00B665A3 /* Data.swift */,
 			);
 			path = iPadAutolayout;
 			sourceTree = "<group>";
@@ -146,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F684A4C7299E759F0050DFB1 /* ViewController.swift in Sources */,
+				F646F143299F5B0F00B665A3 /* Data.swift in Sources */,
 				F684A4C3299E759F0050DFB1 /* AppDelegate.swift in Sources */,
+				F6F3B2D629A198AD0002ACAB /* BWEViewController.swift in Sources */,
 				F684A4C5299E759F0050DFB1 /* SceneDelegate.swift in Sources */,
 				F684A4DC299F14750050DFB1 /* WebViewController.swift in Sources */,
 			);

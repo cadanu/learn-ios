@@ -26,9 +26,9 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TFS-A7-DKw">
-                                <rect key="frame" x="50" y="215" width="457" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <rect key="frame" x="24" y="215" width="631.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="given-name"/>
                                 <connections>
                                     <outlet property="delegate" destination="Wlx-cG-KBc" id="Mbu-ae-4jj"/>
                                 </connections>
@@ -39,31 +39,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill in the info above to continue." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLF-dM-zrt">
-                                <rect key="frame" x="120" y="377" width="580" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill in the info above to continue." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLF-dM-zrt">
+                                <rect key="frame" x="24" y="353" width="772" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzb-8O-hsB">
-                                <rect key="frame" x="50" y="282" width="457" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <rect key="frame" x="24" y="270" width="631.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                                 <connections>
                                     <outlet property="delegate" destination="Wlx-cG-KBc" id="wv7-is-Z3G"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0R-nv-wID">
-                                <rect key="frame" x="607" y="215" width="163" height="90"/>
+                                <rect key="frame" x="679.5" y="215" width="116.5" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="1qb-UN-d10"/>
+                                    <constraint firstAttribute="width" constant="116.5" id="JnD-k5-Ef8"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Click Me">
                                             <attributes>
-                                                <font key="NSFont" size="36" name="Helvetica"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -73,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMd-Si-axJ">
-                                <rect key="frame" x="326" y="444.5" width="168.5" height="42"/>
+                                <rect key="frame" x="326" y="414.5" width="168.5" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted">
                                     <attributedString key="attributedTitle">
@@ -92,31 +94,51 @@
                                 <rect key="frame" x="392" y="865" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddg-uS-2NX">
+                                <rect key="frame" x="275.5" y="491.5" width="269.5" height="42"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="The Best Website Ever">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="8iI-qX-xNT" kind="presentation" id="AGh-Wq-HRv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gfe-TZ-IXq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uLF-dM-zrt" firstAttribute="leading" secondItem="gfe-TZ-IXq" secondAttribute="leading" constant="120" id="2li-mF-mV1"/>
-                            <constraint firstItem="W0R-nv-wID" firstAttribute="leading" secondItem="Jzb-8O-hsB" secondAttribute="trailing" constant="100" id="6W4-lw-egR"/>
+                            <constraint firstItem="uLF-dM-zrt" firstAttribute="leading" secondItem="gfe-TZ-IXq" secondAttribute="leading" constant="24" id="2li-mF-mV1"/>
+                            <constraint firstItem="W0R-nv-wID" firstAttribute="leading" secondItem="Jzb-8O-hsB" secondAttribute="trailing" constant="24" id="6W4-lw-egR"/>
+                            <constraint firstItem="ddg-uS-2NX" firstAttribute="centerX" secondItem="uJn-Jf-KLi" secondAttribute="centerX" id="FpG-uW-H4r"/>
                             <constraint firstItem="JMd-Si-axJ" firstAttribute="top" secondItem="uLF-dM-zrt" secondAttribute="bottom" constant="35" id="Jsc-M6-7sn"/>
-                            <constraint firstItem="gfe-TZ-IXq" firstAttribute="trailing" secondItem="uLF-dM-zrt" secondAttribute="trailing" constant="120" id="Lx9-IQ-ooa"/>
+                            <constraint firstItem="gfe-TZ-IXq" firstAttribute="trailing" secondItem="uLF-dM-zrt" secondAttribute="trailing" constant="24" id="Lx9-IQ-ooa"/>
                             <constraint firstItem="TFS-A7-DKw" firstAttribute="top" secondItem="IEE-M6-zIo" secondAttribute="bottom" constant="70" id="NeK-Wv-uv3"/>
                             <constraint firstItem="gfe-TZ-IXq" firstAttribute="trailing" secondItem="IEE-M6-zIo" secondAttribute="trailing" id="Pq2-IF-ABA"/>
                             <constraint firstItem="W0R-nv-wID" firstAttribute="top" secondItem="IEE-M6-zIo" secondAttribute="bottom" constant="70" id="SDL-zO-HPx"/>
-                            <constraint firstItem="W0R-nv-wID" firstAttribute="leading" secondItem="TFS-A7-DKw" secondAttribute="trailing" constant="100" id="SYz-Kh-Ioo"/>
+                            <constraint firstItem="W0R-nv-wID" firstAttribute="leading" secondItem="TFS-A7-DKw" secondAttribute="trailing" constant="24" id="SYz-Kh-Ioo"/>
                             <constraint firstItem="IEE-M6-zIo" firstAttribute="centerX" secondItem="uJn-Jf-KLi" secondAttribute="centerX" id="T9c-zg-5kt"/>
                             <constraint firstItem="uLF-dM-zrt" firstAttribute="top" secondItem="Jzb-8O-hsB" secondAttribute="bottom" constant="35" id="Vgr-7Y-z8d"/>
                             <constraint firstItem="IEE-M6-zIo" firstAttribute="top" secondItem="gfe-TZ-IXq" secondAttribute="top" constant="58" id="aW2-zP-3ci"/>
-                            <constraint firstItem="TFS-A7-DKw" firstAttribute="leading" secondItem="gfe-TZ-IXq" secondAttribute="leading" constant="50" id="cEf-Ka-EQ2"/>
+                            <constraint firstItem="TFS-A7-DKw" firstAttribute="leading" secondItem="gfe-TZ-IXq" secondAttribute="leading" constant="24" id="cEf-Ka-EQ2"/>
                             <constraint firstItem="JMd-Si-axJ" firstAttribute="centerX" secondItem="uJn-Jf-KLi" secondAttribute="centerX" id="cHP-dI-QRr"/>
                             <constraint firstItem="Jzb-8O-hsB" firstAttribute="top" secondItem="TFS-A7-DKw" secondAttribute="bottom" constant="7" id="k5a-ti-S1N"/>
                             <constraint firstItem="IEE-M6-zIo" firstAttribute="leading" secondItem="gfe-TZ-IXq" secondAttribute="leading" id="oWy-4k-gcn"/>
-                            <constraint firstItem="Jzb-8O-hsB" firstAttribute="leading" secondItem="gfe-TZ-IXq" secondAttribute="leading" constant="50" id="rlo-CP-KlC"/>
-                            <constraint firstItem="gfe-TZ-IXq" firstAttribute="trailing" secondItem="W0R-nv-wID" secondAttribute="trailing" constant="50" id="s1H-Bj-MNW"/>
+                            <constraint firstItem="ddg-uS-2NX" firstAttribute="top" secondItem="JMd-Si-axJ" secondAttribute="bottom" constant="35" id="rhW-HR-E6f"/>
+                            <constraint firstItem="Jzb-8O-hsB" firstAttribute="leading" secondItem="gfe-TZ-IXq" secondAttribute="leading" constant="24" id="rlo-CP-KlC"/>
+                            <constraint firstItem="gfe-TZ-IXq" firstAttribute="trailing" secondItem="W0R-nv-wID" secondAttribute="trailing" constant="24" id="s1H-Bj-MNW"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="YA8-9L-sQ1" id="xkr-aa-Jwv"/>
+                        <outlet property="bestWebsiteButton" destination="ddg-uS-2NX" id="nIa-Mp-wLq"/>
                         <outlet property="clickMeButton" destination="W0R-nv-wID" id="utW-Zh-awv"/>
                         <outlet property="lblBlurb" destination="uLF-dM-zrt" id="E0H-p5-vG4"/>
                         <outlet property="tfEmail" destination="Jzb-8O-hsB" id="xp1-ki-ZdI"/>
@@ -127,6 +149,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWp-Qs-roH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="62.195121951219512" y="-160.67796610169492"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YmI-CY-dqY">
+            <objects>
+                <viewController id="8iI-qX-xNT" customClass="BWEViewController" customModule="iPadAutolayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L3I-rT-QRi">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiv-GM-acu">
+                                <rect key="frame" x="0.0" y="0.0" width="704" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="9cO-lq-c2E"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="The Best Website Ever!" id="hc5-cX-zPc">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="0sp-WV-am7">
+                                            <connections>
+                                                <segue destination="bHH-aq-vuf" kind="unwind" unwindAction="unwindToHomeViewController:" id="sfr-Kj-L48"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85x-jk-XEf">
+                                <rect key="frame" x="5" y="66" width="694" height="919.5"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Wc9-MB-W3b">
+                                <rect key="frame" x="333.5" y="479.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LtL-ek-pBL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qiv-GM-acu" firstAttribute="leading" secondItem="LtL-ek-pBL" secondAttribute="leading" id="4eq-1x-zIU"/>
+                            <constraint firstItem="85x-jk-XEf" firstAttribute="leading" secondItem="LtL-ek-pBL" secondAttribute="leading" constant="5" id="HWn-ba-IyE"/>
+                            <constraint firstItem="LtL-ek-pBL" firstAttribute="trailing" secondItem="85x-jk-XEf" secondAttribute="trailing" constant="5" id="WIF-B5-Cfo"/>
+                            <constraint firstItem="85x-jk-XEf" firstAttribute="top" secondItem="qiv-GM-acu" secondAttribute="bottom" constant="10" id="WbZ-nS-jsn"/>
+                            <constraint firstItem="LtL-ek-pBL" firstAttribute="trailing" secondItem="qiv-GM-acu" secondAttribute="trailing" id="ZER-Bg-Phq"/>
+                            <constraint firstItem="LtL-ek-pBL" firstAttribute="bottom" secondItem="85x-jk-XEf" secondAttribute="bottom" constant="10" id="jyE-Eo-5rQ"/>
+                            <constraint firstItem="qiv-GM-acu" firstAttribute="top" secondItem="LtL-ek-pBL" secondAttribute="top" id="sak-Q9-7RE"/>
+                            <constraint firstItem="Wc9-MB-W3b" firstAttribute="centerY" secondItem="L3I-rT-QRi" secondAttribute="centerY" id="t0r-gf-Tzx"/>
+                            <constraint firstItem="Wc9-MB-W3b" firstAttribute="centerX" secondItem="L3I-rT-QRi" secondAttribute="centerX" id="zFO-Ce-F68"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndictor" destination="Wc9-MB-W3b" id="8dN-qK-CjD"/>
+                        <outlet property="webView" destination="85x-jk-XEf" id="zdT-FU-M70"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPK-qU-qee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="bHH-aq-vuf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="650"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Igj-Dm-84h">
