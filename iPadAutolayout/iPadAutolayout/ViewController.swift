@@ -79,12 +79,25 @@ class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegat
         let data : Data = .init()
         data.initWithData(_name: tfName.text!, _email: tfEmail.text!)
         
+        lblBlurb.text = "Hi"
+        
         // fill label with data
-        if data.saveName != "" || data.saveEmail != "" {
-            lblBlurb.text = "Hi " + data.saveName! + ", of " + data.saveEmail! + "."
+        if data.saveName == "" && data.saveEmail == "" {
+            lblBlurb.text! += ", you forgot to enter required information!"
         }
         else {
-            lblBlurb.text = "You forgot to enter required information."
+            if data.saveName != "" {
+                lblBlurb.text! += " " + data.saveName!
+            }
+            else {
+                lblBlurb.text! += ", [You forgot to add your name!]"
+            }
+            if data.saveEmail != "" {
+                lblBlurb.text! += ", of " + data.saveEmail! + "."
+            }
+            else {
+                lblBlurb.text! += ", of [You forgot to add your email!]."
+            }
         }
         
 //        tfName.text = data.saveName
