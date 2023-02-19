@@ -15,8 +15,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegat
     @IBOutlet var tfEmail: UITextField!
     @IBOutlet var lblBlurb: UILabel!
     @IBOutlet var clickMeButton: UIButton!
-    
     @IBOutlet var webView: WKWebView!
+    @IBOutlet var bestWebsiteButton: UIButton!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     // decides what happens when 'Click Me' is pressed
@@ -35,13 +35,33 @@ class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegat
         present(alert, animated: true)
     }
     
+    // the endpoint for a segue unwind (free memory)
+    @IBAction func unwindToHomeViewController(_ sender: UIStoryboardSegue) {
+    }
+    
+    // viewDidLoad - a main function
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            bestWebsiteButton.isHidden = true
+            
+            let link = URL(string: "https://bestsiteever.com")!
+            let request = URLRequest(url: link)
+            webView.load(request)
+            webView.navigationDelegate = self
+        }
+        else {
+            bestWebsiteButton.isHidden = false
+            
+            webView.isHidden = true
+            activityIndicator.isHidden = true
+        }
+    }
+    
     // helps the keyboard figure itself out
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return textField.resignFirstResponder()
-    }
-    
-    // the endpoint for a segue unwind (free memory)
-    @IBAction func unwindToHomeViewController(_ sender: UIStoryboardSegue) {
     }
     
     // webview functions that control the activityIndicator
@@ -52,22 +72,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegat
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activityIndicator.isHidden = true
         activityIndicator.stopAnimating()
-    }
-    
-    // viewDidLoad - a main function
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            let link = URL(string: "https://bestsiteever.com")!
-            let request = URLRequest(url: link)
-            webView.load(request)
-            webView.navigationDelegate = self
-        }
-        else {
-            webView.isHidden = true
-            activityIndicator.isHidden = true
-        }
     }
     
     // creates a label, called by yesAction, a UIAlertAction
