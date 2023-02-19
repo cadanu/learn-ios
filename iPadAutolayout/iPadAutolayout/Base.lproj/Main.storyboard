@@ -200,7 +200,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="activityIndictor" destination="Wc9-MB-W3b" id="8dN-qK-CjD"/>
+                        <outlet property="activityIndicator" destination="Wc9-MB-W3b" id="yYS-ub-cuK"/>
                         <outlet property="webView" destination="85x-jk-XEf" id="zdT-FU-M70"/>
                     </connections>
                 </viewController>
