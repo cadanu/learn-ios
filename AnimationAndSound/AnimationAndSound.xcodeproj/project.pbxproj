@@ -26,6 +26,11 @@
 		F6B83B0E29A4F47A00EAB2DA /* FlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B83B0D29A4F47A00EAB2DA /* FlyViewController.swift */; };
 		F6B83B1029A4F48600EAB2DA /* FadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B83B0F29A4F48600EAB2DA /* FadeViewController.swift */; };
 		F6B83B1229A4F92400EAB2DA /* VariedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B83B1129A4F92400EAB2DA /* VariedViewController.swift */; };
+		F6B83B1529A53E3900EAB2DA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B83B1429A53E3900EAB2DA /* AVFoundation.framework */; };
+		F6B83B1729A53F4600EAB2DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B83B1629A53F4500EAB2DA /* QuartzCore.framework */; };
+		F6B83B1A29A5683E00EAB2DA /* superman.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B83B1829A5683C00EAB2DA /* superman.png */; };
+		F6B83B1B29A5683E00EAB2DA /* ship-wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B83B1929A5683D00EAB2DA /* ship-wheel.png */; };
+		F6B83B1D29A568E900EAB2DA /* ship-wheel2.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B83B1C29A568E800EAB2DA /* ship-wheel2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		F6B83B0D29A4F47A00EAB2DA /* FlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyViewController.swift; sourceTree = "<group>"; };
 		F6B83B0F29A4F48600EAB2DA /* FadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeViewController.swift; sourceTree = "<group>"; };
 		F6B83B1129A4F92400EAB2DA /* VariedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariedViewController.swift; sourceTree = "<group>"; };
+		F6B83B1429A53E3900EAB2DA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F6B83B1629A53F4500EAB2DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F6B83B1829A5683C00EAB2DA /* superman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = superman.png; sourceTree = "<group>"; };
+		F6B83B1929A5683D00EAB2DA /* ship-wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-wheel.png"; sourceTree = "<group>"; };
+		F6B83B1C29A568E800EAB2DA /* ship-wheel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-wheel2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B83B1729A53F4600EAB2DA /* QuartzCore.framework in Frameworks */,
+				F6B83B1529A53E3900EAB2DA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +80,7 @@
 			children = (
 				F6B83AE129A2A1DB00EAB2DA /* AnimationAndSound */,
 				F6B83AE029A2A1DB00EAB2DA /* Products */,
+				F6B83B1329A53E3800EAB2DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +130,9 @@
 		F6B83B0A29A4F3FA00EAB2DA /* rsc */ = {
 			isa = PBXGroup;
 			children = (
+				F6B83B1C29A568E800EAB2DA /* ship-wheel2.png */,
+				F6B83B1929A5683D00EAB2DA /* ship-wheel.png */,
+				F6B83B1829A5683C00EAB2DA /* superman.png */,
 				F6B83AFE29A4F3D700EAB2DA /* assassin.png */,
 				F6B83AFB29A4F3D500EAB2DA /* Braveheart.mp3 */,
 				F6B83AFA29A4F3D400EAB2DA /* death-star.png */,
@@ -129,6 +145,15 @@
 			);
 			name = rsc;
 			path = ../rsc;
+			sourceTree = "<group>";
+		};
+		F6B83B1329A53E3800EAB2DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6B83B1629A53F4500EAB2DA /* QuartzCore.framework */,
+				F6B83B1429A53E3900EAB2DA /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,8 +215,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6B83B0529A4F3D800EAB2DA /* Justice.mp3 in Resources */,
+				F6B83B1A29A5683E00EAB2DA /* superman.png in Resources */,
 				F6B83B0329A4F3D800EAB2DA /* death-star.png in Resources */,
 				F6B83B0729A4F3D800EAB2DA /* assassin.png in Resources */,
+				F6B83B1D29A568E900EAB2DA /* ship-wheel2.png in Resources */,
 				F6B83B0829A4F3D800EAB2DA /* smiley.png in Resources */,
 				F6B83B0429A4F3D800EAB2DA /* Braveheart.mp3 in Resources */,
 				F6B83B0129A4F3D800EAB2DA /* ufo.png in Resources */,
@@ -199,6 +226,7 @@
 				F6B83B0229A4F3D800EAB2DA /* keysofmoon-immense.mp3 in Resources */,
 				F6B83B0929A4F3D800EAB2DA /* toast-man.png in Resources */,
 				F6B83AEF29A2A1DD00EAB2DA /* LaunchScreen.storyboard in Resources */,
+				F6B83B1B29A5683E00EAB2DA /* ship-wheel.png in Resources */,
 				F6B83AEC29A2A1DD00EAB2DA /* Assets.xcassets in Resources */,
 				F6B83AEA29A2A1DB00EAB2DA /* Main.storyboard in Resources */,
 			);
