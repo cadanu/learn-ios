@@ -9,11 +9,25 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    var window: UIWindow?
+    
+    var title: String = ""
+    var options: [String] = []
+    var scores: [String : String] = [:]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        title = "Dictionary, Array, App Delegate Example"
+        
+        options = ["Play Game", "Settings", "About App", "Online Play"]
+        
+        scores["Score"] = "Score : 3421"
+        scores["Level"] = "Level 34"
+        scores["High"] = "High Score: 987332"
+        scores["Time"] = "Time Left: 43"
+        
         return true
     }
 
