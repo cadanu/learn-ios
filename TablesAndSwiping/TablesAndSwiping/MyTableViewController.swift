@@ -11,10 +11,12 @@ class MyTableViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var listData: Array<String> = ["Jays", "Leafs", "Raptors", "Marlies", "FC"]
 
+    //
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listData.count
     }
 
+    //
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .default, reuseIdentifier: "cell")
@@ -24,11 +26,48 @@ class MyTableViewController: UIViewController, UITableViewDataSource, UITableVie
         tableCell.accessoryType = .disclosureIndicator
 
         return tableCell
-
     }
 
+    //
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
+    }
+    
+    //
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true;
+    }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let modify = UIContextualAction(style: .normal, title: "Modify") { action, view, success in
+            print("Modify button tapped")
+            success(true)
+        }
+        modify.backgroundColor = .red
+        
+        return UISwipeActionsConfiguration(actions: [modify])
+    }
+    
+    //
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let more = UITableViewRowAction(style: .normal, title: "More") { action, index in
+            print("More button tapped")
+        }
+        more.backgroundColor = .lightGray
+        
+        let favourite = UITableViewRowAction(style: .normal, title: "Favourite") { action, index in
+            print("Favourite button tapped")
+        }
+        favourite.backgroundColor = .orange
+        
+        let share = UITableViewRowAction(style: .normal, title: "Share") { action, index in
+            print("Share button tapped")
+        }
+        share.backgroundColor = .blue
+        
+        return [share, favourite, more]
     }
     
 
