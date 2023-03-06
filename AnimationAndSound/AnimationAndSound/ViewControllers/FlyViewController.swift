@@ -46,7 +46,7 @@ class FlyViewController: UIViewController {
         moveAnimation.toValue = NSValue.init(cgPoint: CGPoint(x: 1200, y: 0))
         
         moveAnimation.isRemovedOnCompletion = false
-        moveAnimation.duration = 3.0
+        moveAnimation.duration = 5.0
         moveAnimation.repeatCount = Float.infinity
         flyLayer?.add(moveAnimation, forKey: "flyBy")
         
